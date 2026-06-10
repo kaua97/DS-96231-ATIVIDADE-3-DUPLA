@@ -29,13 +29,17 @@
 }
 
 .nav-link {
-  color: #e5e7eb;
+  color: #ffffff;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 900;
   font-size: 1.05rem;
   transition: all 0.3s ease;
   position: relative;
   padding: 5px 0;
+
+  
+
+  
 }
 
 /* Efeito hover: muda de cor e cria uma linha vermelha embaixo */
@@ -56,5 +60,43 @@
 
 .nav-link:hover::after {
   width: 100%;
+}
+/* 1. Ajuste no container principal do cabeçalho */
+.header-container {
+  display: flex;
+  align-items:  center; /* Alinha verticalmente os itens */
+  justify-content: space-between; /* Mantém as extremidades equilibradas */
+  width: 100%;
+  padding: 15px 40px; /* Ajuste o espaçamento interno como preferir */
+  box-sizing: border-box;
+}
+
+/* 2. Faz o bloco do logo ocupar um espaço flexível na esquerda */
+.header-logo {
+  flex: 2; 
+  display: flex;
+  justify-content: flex-start; /* Garante o logo alinhado à esquerda */
+}
+
+/* 3. Faz o bloco do menu (nav) se espalhar e centralizar no meio da tela */
+nav {
+  flex: 1; /* Dá mais peso para o meio, empurrando os lados igualmente */
+  display: flex;
+  justify-content: center; /* ISSO joga os links exatamente para o centro real da tela */
+}
+
+/* 4. Garante que os links fiquem em linha e com espaçamento entre eles */
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 50px; /* Espaço elegante entre os itens do menu */
+}
+
+/* 5. O SEGREDO DO EQUILÍBRIO: Cria um espaço fantasma idêntico na direita */
+.header-container::after {
+  content: '';
+  flex: 0.5; /* Tem o mesmo tamanho (flex: 1) do logo, agindo como um contrapeso */
 }
 
