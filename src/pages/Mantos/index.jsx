@@ -3,7 +3,7 @@
     export default function Mantos() {
     return (
         <div className="vitoria-theme">
-        <nav className="navbar">
+        <nav>
             <div className="logo">EC VITÓRIA</div>
             <div className="nav-links">
             <a href="#">Home</a>
