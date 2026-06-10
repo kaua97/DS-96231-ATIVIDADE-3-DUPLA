@@ -1,17 +1,22 @@
+    import { Link } from 'react-router-dom';
     import './style.css';
 
     export default function Mantos() {
     return (
         <div className="vitoria-theme">
+<<<<<<< HEAD
+=======
+        {/* Navbar integrada com o seu sistema de rotas */}
+>>>>>>> b0c990d0f375f439526d2a4dee5ef2764f11b90b
         <nav>
             <div className="logo">EC VITÓRIA</div>
             <div className="nav-links">
-            <a href="#">Home</a>
-            <a href="#">História</a>
-            <a href="#" className="active">Mantos</a>
+            <Link to="/">Home</Link>
+            <Link to="/historia">História</Link>
+            <Link to="/mantos" className="active">Mantos</Link>
             </div>
         </nav>
-
+        
         <section className="mantos-section">
             <div className="section-title">
             <h5>Coleção Oficial</h5>
@@ -19,41 +24,44 @@
             </div>
 
             <div className="mantos-grid">
-            {/* Card 1 */}
+            {/* Card 1 - Camisa Titular */}
             <div className="manto-card">
                 <div className="manto-img-wrapper">
-                <div className="manto-placeholder rubro-negro"></div>
+                {/* COLOQUE A SUA IMAGEM 1 AQUI DENTRO DA PASTA public COM O NOME: camisa-titular.jpg */}
+                <img src="/camisaVP1.jpg" className="public/camisaVP1.jpg" alt="Manto Rubro-Negro" />
                 <span className="manto-tag">Titular</span>
                 </div>
                 <div className="manto-info">
-                <h3>Manto Home 2026</h3>
-                <p>As tradicionais faixas horizontais carregadas de raça e paixão.</p>
+                <h3>Manto Rubro-Negro</h3>
+                <p>As tradicionais faixas vermelho e preto carregadas de raça e paixão.</p>
                 <div className="price">R$ 349,90</div>
                 </div>
             </div>
 
-            {/* Card 2 */}
+            {/* Card 2 - Camisa Reserva */}
             <div className="manto-card">
                 <div className="manto-img-wrapper">
-                <div className="manto-placeholder branco-vitoria"></div>
+                {/* COLOQUE A SUA IMAGEM 2 AQUI DENTRO DA PASTA public COM O NOME: camisa-reserva.jpg */}
+                <img src="/camisaBranca.jpg" className="public/camisaBranca.jpg" alt="Manto Branco 2026" />
                 <span className="manto-tag">Reserva</span>
                 </div>
                 <div className="manto-info">
-                <h3>Manto Away 2026</h3>
+                <h3>Manto Branco</h3>
                 <p>A elegância do branco com detalhes marcantes em vermelho e preto.</p>
                 <div className="price">R$ 349,90</div>
                 </div>
             </div>
 
-            {/* Card 3 */}
+            {/* Card 3 - Camisa Especial */}
             <div className="manto-card">
                 <div className="manto-img-wrapper">
-                <div className="manto-placeholder dourado-vitoria"></div>
+                {/* COLOQUE A SUA IMAGEM 3 AQUI DENTRO DA PASTA public COM O NOME: camisa-especial.jpg */}
+                <img src="/camisaPreta.jpg" className="public/camisaPreta.jpg" alt="Manto Preto" />
                 <span className="manto-tag Especial">Especial</span>
                 </div>
                 <div className="manto-info">
-                <h3>Manto Consciência</h3>
-                <p>Edição especial dourada celebrando o orgulho e as raízes da Bahia.</p>
+                <h3>Manto Preto</h3>
+                <p>Edição all Black.</p>
                 <div className="price">R$ 359,90</div>
                 </div>
             </div>
