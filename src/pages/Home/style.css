@@ -72,14 +72,15 @@
     color: var(--vermelho);
     }
 
-    /* Hero Section com Animação */
     .hero-container {
     height: 100vh;
+    width: 100vw; /* Adicione essa linha */
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 8%;
     background: radial-gradient(circle at 80% 20%, #e3061315, transparent 45%);
+    box-sizing: border-box; /* Adicione essa linha para não quebrar a barra de rolagem */
     }
 
     .hero-content {
