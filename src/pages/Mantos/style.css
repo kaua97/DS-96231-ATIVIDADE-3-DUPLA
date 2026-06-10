@@ -1,0 +1,105 @@
+    @import url('../home/style.css');
+
+    .mantos-section {
+    padding: 120px 8% 60px;
+    min-height: 100vh;
+    background-color: var(--preto);
+    }
+
+    .mantos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    padding-top: 20px;
+    }
+
+    .manto-card {
+    background-color: var(--preto-card);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: var(--transicao);
+    border: 1px solid #222;
+    }
+
+    /* Container da imagem com efeito Zoom Out de segurança */
+    .manto-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background-color: #111;
+    overflow: hidden;
+    }
+
+    /* Simuladores de cor das camisas (Substituir por tags <img> reais futuramente) */
+    .manto-placeholder {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+    }
+
+    .rubro-negro {
+    background: linear-gradient(180deg, var(--vermelho) 50%, var(--preto) 50%);
+    }
+
+    .branco-vitoria {
+    background: #f5f5f5;
+    border-bottom: 15px solid var(--vermelho);
+    }
+
+    .dourado-vitoria {
+    background: linear-gradient(135deg, #b8860b, var(--dourado));
+    }
+
+    /* Tag flutuante sobre a imagem */
+    .manto-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: var(--preto);
+    color: var(--branco);
+    padding: 5px 12px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .manto-tag.Especial {
+    background-color: var(--dourado);
+    color: var(--preto);
+    }
+
+    .manto-info {
+    padding: 25px;
+    }
+
+    .manto-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    }
+
+    .manto-info p {
+    color: #888;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    height: 42px; /* Garante alinhamento mesmo com textos diferentes */
+    }
+
+    .price {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--vermelho);
+    }
+
+    /* Efeito Visual ao passar o Mouse (Mantos) */
+    .manto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(227, 6, 19, 0.15);
+    border-color: rgba(227, 6, 19, 0.4);
+    }
+
+    .manto-card:hover .manto-placeholder {
+    transform: scale(1.08);
+    }
