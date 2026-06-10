@@ -1,0 +1,59 @@
+.header-container {
+  background-color: #111827; /* Fundo preto escuro para contrastar */
+  border-bottom: 4px solid #e11d48; /* Linha grossa vermelha (marca registrada) */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header-logo h1 {
+  color: #ffffff;
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.header-logo span {
+  color: #e11d48; /* O "EC" ou "Vitória" em vermelho */
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  color: #e5e7eb;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 5px 0;
+}
+
+/* Efeito hover: muda de cor e cria uma linha vermelha embaixo */
+.nav-link:hover {
+  color: #e11d48;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #e11d48;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
