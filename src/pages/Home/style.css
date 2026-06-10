@@ -74,13 +74,24 @@
 
     .hero-container {
     height: 100vh;
-    width: 100vw; /* Adicione essa linha */
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 8%;
-    background: radial-gradient(circle at 80% 20%, #e3061315, transparent 45%);
-    box-sizing: border-box; /* Adicione essa linha para não quebrar a barra de rolagem */
+    box-sizing: border-box;
+
+    /* 1. ADICIONA A SUA IMAGEM DA PASTA PUBLIC */
+    /* Mantive o gradiente preto por cima para que as letras brancas continuem legíveis */
+    background: linear-gradient(rgba(17, 17, 17, 0.75), rgba(17, 17, 17, 0.75)), 
+                url('/barradao.png');
+    
+    /* 2. AJUSTES DA IMAGEM PARA FICAR PERFEITA */
+    background-size: cover;       /* Ocupa a tela inteira sem distorcer */
+    background-position: center;  /* Centraliza a imagem no fundo */
+    background-repeat: no-repeat; /* Não deixa a imagem duplicar */
+    
+    position: relative;
     }
 
         .hero-content {

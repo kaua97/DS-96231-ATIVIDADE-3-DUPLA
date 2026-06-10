@@ -1,4 +1,5 @@
     import './style.css';
+    
 
     export default function Home() {
     return (
@@ -12,8 +13,12 @@
             <button className="btn-primary">Seja Sócio LEÃO</button>
             </div>
             <div className="hero-image-slot">
-            {/* Aqui entraria a foto do Barradão ou do escudo */}
-            <div className="floating-badge">1899</div>
+            <img src="/src/assets/barradao.jpg" alt="Estádio Manoel Barradas" />
+            <div className="floating-badge">
+                <img src=" " alt="Hexa Campeão" />
+
+
+            </div>
             </div>
         </main>
         </div>
