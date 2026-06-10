@@ -9,9 +9,9 @@ export default function Header() {
       </div>
       <nav>
         <ul className="nav-list">
-          <li><Link to="/" className="nav-link">Home</Link></li>
-          <li><Link to="/historia" className="nav-link">História</Link></li>
-          
+          <li><Link to="/" className="nav-link">Home 🦁​</Link></li>
+          <li><Link to="/historia" className="nav-link">História🖤​</Link></li>
+          <li><Link to="/Mantos" className="nav-link">Mantos​❤️​</Link></li>
         </ul>
       </nav>
     </header>
