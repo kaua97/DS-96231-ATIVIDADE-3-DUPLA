@@ -3,14 +3,6 @@
     export default function Historia() {
     return (
         <div className="vitoria-theme">
-        <nav className="navbar">
-            <div className="logo">EC VITÓRIA</div>
-            <div className="nav-links">
-            <a href="#">Home</a>
-            <a href="#" className="active">História</a>
-            <a href="#">Mantos</a>
-            </div>
-        </nav>
 
         <section className="history-section">
             <div className="section-title">

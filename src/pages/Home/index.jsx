@@ -3,14 +3,6 @@
     export default function Home() {
     return (
         <div className="vitoria-theme">
-        <nav className="navbar">
-            <div className="logo">EC VITÓRIA</div>
-            <div className="nav-links">
-            <a href="#" className="active">Home</a>
-            <a href="#">História</a>
-            <a href="#">Mantos</a>
-            </div>
-        </nav>
 
         <main className="hero-container">
             <div className="hero-content">
