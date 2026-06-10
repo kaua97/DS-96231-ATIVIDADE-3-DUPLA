@@ -11,7 +11,7 @@ export default function Header() {
         <ul className="nav-list">
           <li><Link to="/" className="nav-link">Home</Link></li>
           <li><Link to="/historia" className="nav-link">História</Link></li>
-          <li><Link to="/elenco" className="nav-link">Elenco</Link></li>
+          
         </ul>
       </nav>
     </header>
