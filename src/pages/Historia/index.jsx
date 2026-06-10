@@ -26,7 +26,7 @@
             <div className="history-card">
                 <div className="year">Fábrica de Talentos</div>
                 <h3>Canteiro de Reis</h3>
-                <p>Berço de lendas do futebol mundial como Bebeto, Vampeta, Dida e David Luiz. A base mais respeitada do país.</p>
+                <p>Berço de lendas do futebol mundial como Bebeto, Vampeta, Dida, Hulk e David Luiz. A base mais respeitada do país.</p>
             </div>
             </div>
         </section>

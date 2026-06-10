@@ -9,7 +9,7 @@
             <span className="badge">Sou Mais Vitória</span>
             <h1>O ÚNICO HEXA CAMPEÃO<br /><span>DO NORDESTE</span></h1>
             <p>Sinta a energia da maior torcida do Norte-Nordeste. O Barradão te espera.</p>
-            <button className="btn-primary">Seja Sócio Avante</button>
+            <button className="btn-primary">Seja Sócio LEÃO</button>
             </div>
             <div className="hero-image-slot">
             {/* Aqui entraria a foto do Barradão ou do escudo */}
