@@ -7,7 +7,7 @@
         <main className="hero-container">
             <div className="hero-content">
             <span className="badge">Sou Mais Vitória</span>
-            <h1>O ÚNICO CAMPEÃO <br /><span>DA TERRA</span></h1>
+            <h1>O ÚNICO HEXA CAMPEÃO<br /><span>DO NORDESTE</span></h1>
             <p>Sinta a energia da maior torcida do Norte-Nordeste. O Barradão te espera.</p>
             <button className="btn-primary">Seja Sócio Avante</button>
             </div>
