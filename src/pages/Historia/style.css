@@ -1,88 +1,104 @@
-    /* Reaproveita as variáveis do :root do arquivo anterior */
-    @import url('../home/style.css'); 
+   :root {
+  --vermelho: #e21a22;
+  --preto: #111111;
+  --preto-card: #1a1a1a;
+  --dourado: #cca23a;
+  --transicao: all 0.3s ease;
+}
 
-    .history-section {
-    padding: 120px 8% 60px;
-    min-height: 100vh;
-    background: linear-gradient(180deg, var(--preto) 0%, #151515 100%);
-    }
+.vitoria-theme {
+  width: 100% !important;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #111111 0%, #151515 100%) !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
 
-    .section-title {
-    text-align: center;
-    margin-bottom: 60px;
-    animation: fadeInUp 0.8s ease-out;
-    }
+.history-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
 
-    .section-title h5 {
-    color: var(--vermelho);
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-size: 14px;
-    margin-bottom: 10px;
-    }
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
 
-    .section-title h2 {
-    font-size: 36px;
-    font-weight: 800;
-    }
+.section-title h5 {
+  color: var(--vermelho);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
 
-    .section-title h2 span {
-    color: var(--vermelho);
-    }
+.section-title h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #ffffff;
+}
 
-    /* Grid com Efeito de Hover Harmônico */
-    .grid-history {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    }
+.section-title h2 span {
+  color: var(--vermelho);
+}
 
-    .history-card {
-    background-color: var(--preto-card);
-    padding: 40px;
-    border-radius: 8px;
-    border-left: 4px solid #333;
-    transition: var(--transicao);
-    cursor: pointer;
-    }
+.grid-history {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  width: 100%;
+}
 
-    .history-card .year {
-    font-size: 32px;
-    font-weight: 900;
-    color: #444;
-    margin-bottom: 15px;
-    transition: var(--transicao);
-    }
+.history-card {
+  background-color: var(--preto-card);
+  padding: 40px;
+  border-radius: 8px;
+  border-left: 4px solid #333;
+  transition: var(--transicao);
+  cursor: pointer;
+  box-sizing: border-box;
+}
 
-    .history-card h3 {
-    font-size: 22px;
-    margin-bottom: 15px;
-    }
+.history-card .year {
+  font-size: 32px;
+  font-weight: 900;
+  color: #444;
+  margin-bottom: 15px;
+  transition: var(--transicao);
+}
 
-    .history-card p {
-    color: #aaa;
-    line-height: 1.6;
-    font-size: 15px;
-    }
+.history-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
 
-    /* Efeito de Transição Suave nos Cards */
-    .history-card:hover {
-    transform: translateY(-10px);
-    background-color: #222;
-    border-left-color: var(--vermelho);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
-    }
+.history-card p {
+  color: #aaa;
+  line-height: 1.6;
+  font-size: 15px;
+}
 
-    .history-card:hover .year {
-    color: var(--vermelho);
-    transform: scale(1.05);
-    }
+.history-card:hover {
+  transform: translateY(-10px);
+  background-color: #222;
+  border-left-color: var(--vermelho);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
 
-    /* Destaque Diferenciado para Equilíbrio Visual */
-    .history-card.em-destaque {
-    border-left-color: var(--dourado);
-    }
+.history-card:hover .year {
+  color: var(--vermelho);
+}
 
-    .history-card.em-destaque .year {
-    color: var(--dourado);
-    }
+.history-card.em-destaque {
+  border-left-color: var(--dourado);
+}
+
+.history-card.em-destaque .year {
+  color: var(--dourado);
+}

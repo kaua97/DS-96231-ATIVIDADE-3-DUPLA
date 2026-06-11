@@ -8,14 +8,15 @@ import Mantos from './pages/Mantos'; // 1. Importando a página de Mantos que fa
 export default function App() {
   return (
     <Router>
-      <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', backgroundColor: '#f3f4f6' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh', backgroundColor: '#000000ff' }}>
         
         {/* O Header fica aqui fixo. Ele carrega os links que mudam a URL */}
         <Header />
 
         {/* 2. O conteúdo principal agora controla TODAS as páginas dinamicamente */}
-        <main style={{ flex: 1, padding: '2rem' }}>
+        <main style={{ flex: 1, width: '100%', padding: '2rem 0', boxSizing: 'border-box' }}>
           <Routes>
+            
             {/* Quando a URL for "/", renderiza apenas a Home */}
             <Route path="/" element={<Home />} />
             
@@ -24,6 +25,7 @@ export default function App() {
             
             {/* Quando a URL for "/mantos", renderiza apenas os Mantos */}
             <Route path="/mantos" element={<Mantos />} />
+            
           </Routes>
         </main>
 
